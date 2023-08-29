@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+nav {
+  width: 100%;
+  height: 65px;
+  background-color: rgba(2, 17, 181, 0.92);
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* Band section start */
+
+.band-section {
+  display: flex;
+  align-items: center;
+}
+
+.band-logo {
+  margin-right: 1rem;
+}
+
+.band-logo span {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.band-title a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Band section end */
+
+/* menu section start */
+
+.main-menu {
+  display: flex;
+  margin-left: 2rem;
+  align-items: center;
+}
+
+.main-menu a,
+.right-menu a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.main-menu a:hover,
+.right-menu a:hover {
+  cursor: pointer;
+  color: #ffff00;
+}
+
+/* menu section end */
+
+/* right menu start*/
+.right-menu {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.right-menu button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.right-menu button > span {
+  font-size: 1.5rem;
+}
+
+/* right menu end */
+
+/* dropdown menu start */
+.dropdown-menu {
+  position: relative;
+}
+
+.dropdown-menu:hover .dropdown-items {
+  display: block;
+}
+
+.dropdown-menu > .dropdown-items {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  box-shadow: rgba(1, 3, 35, 0.92);
+  width: 200px;
+  border-radius: 10px;
+  display: none;
+}
+
+.dropdown-items-ul {
+  list-style-type: none;
+}
+
+.dropdown-items-li {
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.dropdown-items-li:hover {
+  background-color: #fff;
+}
+
+.dropdown-items-li a {
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  word-spacing: normal;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* dropdown menu end */
+
+/* mega menu 1 start  */
+
+.mega-menu {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.mega-menu:hover .mega-menu-container {
+  display: block;
+}
+
+.mega-menu > .mega-menu-container {
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 700px;
+  height: 300px;
+  display: none;
+}
+
+/* mega menu 1 end  */
